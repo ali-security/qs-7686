@@ -3,10 +3,8 @@ language: node_js
 os:
  - linux
 import:
- - ljharb/travis-ci:node/all.yml
- - ljharb/travis-ci:node/pretest.yml
- - ljharb/travis-ci:node/posttest.yml
- - ljharb/travis-ci:node/coverage.yml
+ - ljharb/travis-ci:node/all.yml@cf8740496111fa114fcd667317ea9c8eda5e34ca
+ - ljharb/travis-ci:node/pretest.yml@cf8740496111fa114fcd667317ea9c8eda5e34ca
 matrix:
-  allow_failures:
+   allow_failures:
     - env: COVERAGE=true # temporarily allow this to fail
